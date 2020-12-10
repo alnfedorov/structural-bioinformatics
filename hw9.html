@@ -13653,7 +13653,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="n">dock_obj</span><span class="o">.</span><span class="n">dock</span><span class="p">(</span><span class="n">mols</span><span class="p">,</span> <span class="n">prot</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="n">docking</span><span class="o">.</span><span class="n">dock</span><span class="p">(</span><span class="n">mols</span><span class="p">,</span> <span class="n">prot</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13955,18 +13955,50 @@ viewer_16076067303464952.render();
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1042;&#1099;&#1074;&#1086;&#1076;&#1099;">&#1042;&#1099;&#1074;&#1086;&#1076;&#1099;<a class="anchor-link" href="#&#1042;&#1099;&#1074;&#1086;&#1076;&#1099;">&#182;</a></h3><p>Принципиально, score докинга можно было бы предсказать с помощью произвольной модели машинного обучения или их ансамбля (NNScore и RFScore в odt). При скрининге больших библиотек это, вероятно, позволило бы сэкономить тысячи CPU-часов.</p>
-<p>Это, впрочем, не отменяет необходимость валидировать финальных кандидатов с помощью более формальных подходов, например, молекулярной динамики (вдруг binding affinity сильно ниже предсказанного?). Всегда стоит помнить про biases машинного обучения и любых эмпирических алгоритмов.</p>
+<h3 id="&#1042;&#1099;&#1074;&#1086;&#1076;&#1099;">&#1042;&#1099;&#1074;&#1086;&#1076;&#1099;<a class="anchor-link" href="#&#1042;&#1099;&#1074;&#1086;&#1076;&#1099;">&#182;</a></h3><p>Принципиально, score докинга можно было бы предсказать с помощью произвольной модели машинного обучения или их ансамбля (NNScore и RFScore в odt, например). При скрининге больших библиотек это, вероятно, позволило бы сэкономить тысячи CPU-часов.</p>
+<p>Впрочем, это не отменяет необходимость валидировать финальных кандидатов с помощью более формальных подходов, например, молекулярной динамики (вдруг binding affinity сильно ниже предсказанного?). Всегда стоит помнить про biases машинного обучения и любых эмпирических алгоритмов.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert hw9.ipynb --to html
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook hw9.ipynb to html
+[NbConvertApp] Writing 414917 bytes to hw9.html
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
